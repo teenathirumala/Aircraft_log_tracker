@@ -1,0 +1,31 @@
+[
+  {
+    "component": "Engine",
+    "aircraftId": "A123",
+    "date": "2025-01-15",
+    "failure": true,
+    "hoursSinceLastMaintenance": 500
+  },
+  {
+    "component": "Wing",
+    "aircraftId": "A123",
+    "date": "2025-02-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 300
+  },
+  {
+    "component": "Landing Gear",
+    "aircraftId": "A124",
+    "date": "2025-03-05",
+    "failure": true,
+    "hoursSinceLastMaintenance": 600
+  },
+  {
+    "component": "Landing Gear",
+    "aircraftId": "A125",
+    "date": "2025-03-02",
+    "failure": true,
+    "hoursSinceLastMaintenance": 500
+  }
+  
+]

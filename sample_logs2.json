@@ -1,0 +1,58 @@
+[
+  {
+    "component": "Engine",
+    "aircraftId": "A123",
+    "date": "2025-01-10",
+    "failure": true,
+    "hoursSinceLastMaintenance": 550
+  },
+  {
+    "component": "Wing",
+    "aircraftId": "A123",
+    "date": "2025-01-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 320
+  },
+  {
+    "component": "Landing Gear",
+    "aircraftId": "A124",
+    "date": "2025-02-05",
+    "failure": true,
+    "hoursSinceLastMaintenance": 700
+  },
+  {
+    "component": "Propeller",
+    "aircraftId": "A125",
+    "date": "2025-02-20",
+    "failure": true,
+    "hoursSinceLastMaintenance": 450
+  },
+  {
+    "component": "Engine",
+    "aircraftId": "A126",
+    "date": "2025-03-12",
+    "failure": false,
+    "hoursSinceLastMaintenance": 900
+  },
+  {
+    "component": "Avionics",
+    "aircraftId": "A127",
+    "date": "2025-04-01",
+    "failure": true,
+    "hoursSinceLastMaintenance": 600
+  },
+  {
+    "component": "Fuel System",
+    "aircraftId": "A128",
+    "date": "2025-04-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 300
+  },
+  {
+    "component": "Engine",
+    "aircraftId": "A129",
+    "date": "2025-05-10",
+    "failure": true,
+    "hoursSinceLastMaintenance": 650
+  }
+]

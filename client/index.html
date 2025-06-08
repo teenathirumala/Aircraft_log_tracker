@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aircraft Maintenance Log Analyzer</title>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Use Poppins font globally */
+    body {
+      font-family: 'Poppins', sans-serif;
+      /* Background image with overlay */
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05') no-repeat center center fixed;
+      background-size: cover;
+      color: #333333;
+    }
+    /* Card with subtle off-white gradient */
+    .card {
+      background: linear-gradient(145deg, #F5F5F5 0%, #EDEDED 100%);
+      border: 2px solid #1A2526;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(26, 37, 38, 0.3);
+    }
+    /* Fade transition for sections */
+    .fade-transition {
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .fade-transition.hidden {
+      opacity: 0;
+      transform: translateY(10px);
+      display: none;
+    }
+    .fade-transition.visible {
+      opacity: 1;
+      transform: translateY(0);
+      display: block;
+    }
+    /* Button hover and click animations */
+    .btn-hover {
+      transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(to right, #D4AF37, #B8972E);
+    }
+    .btn-hover:active {
+      transform: scale(0.95);
+    }
+    /* Loading spinner */
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #D4AF37;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    /* Chart animation */
+    #failureChart {
+      animation: chartFadeIn 0.5s ease-in-out;
+    }
+    @keyframes chartFadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    /* Section divider */
+    .section-divider {
+      border-top: 2px solid #1A2526;
+      opacity: 0.3;
+      margin: 2rem 0;
+    }
+    /* Custom text colors */
+    .text-primary { color: #333333; }
+    .text-secondary { color: #666666; }
+    .text-accent { color: #D4AF37; }
+    .bg-navy { background: linear-gradient(to right, #1A2526, #2A3A3B); }
+    .bg-navy-clear { background: linear-gradient(to right, #4B5A5B, #5A6A6B); }
+    .bg-navy-logout { background: linear-gradient(to right, #B22222, #8B0000); }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+  <div class="container mx-auto p-4 sm:p-6 max-w-5xl">
+    <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 card">
+      <h1 class="text-2xl sm:text-3xl font-bold text-center text-primary mb-6 flex items-center justify-center">
+        <i class="fas fa-plane mr-3 text-accent"></i>
+        Aircraft Maintenance Log Analyzer
+      </h1>
+      
+      <!-- Authentication Section -->
+      <div id="auth-section" class="fade-transition visible">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          <!-- Signup Form -->
+          <div id="signup-section">
+            <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
+              <i class="fas fa-user-plus mr-2 text-accent"></i> Sign Up
+            </h2>
+            <input type="text" id="signup-username" placeholder="Choose a username" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+            <input type="password" id="signup-password" placeholder="Choose a password" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+            <button onclick="signup()" class="w-full bg-navy text-white p-3 rounded-lg btn-hover flex items-center justify-center">
+              <i class="fas fa-user-plus mr-2"></i> Sign Up
+            </button>
+          </div>
+          
+          <!-- Login Form -->
+          <div id="login-section">
+            <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
+              <i class="fas fa-sign-in-alt mr-2 text-accent"></i> Login
+            </h2>
+            <input type="text" id="username" placeholder="Username" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+            <input type="password" id="password" placeholder="Password" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+            <button onclick="login()" class="w-full bg-navy text-white p-3 rounded-lg btn-hover flex items-center justify-center">
+              <i class="fas fa-sign-in-alt mr-2"></i> Login
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Section (Upload, Analysis, Predictions) -->
+      <div id="main-section" class="fade-transition hidden">
+        <!-- Upload Section -->
+        <div id="upload-section" class="mb-8">
+          <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
+            <i class="fas fa-upload mr-2 text-accent"></i> Upload Maintenance Logs
+          </h2>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-wrap">
+            <input type="file" id="logFile" accept=".json" class="p-3 border rounded-lg text-secondary flex-1 min-w-[200px] bg-gray-100">
+            <button onclick="uploadLogs()" class="bg-navy text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
+              <i class="fas fa-upload mr-2"></i> Upload
+            </button>
+            <button onclick="clearLogs()" class="bg-navy-clear text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
+              <i class="fas fa-trash-alt mr-2"></i> Clear Logs
+            </button>
+            <button onclick="logout()" class="bg-navy-logout text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
+              <i class="fas fa-sign-out-alt mr-2"></i> Logout
+            </button>
+          </div>
+        </div>
+        <div class="section-divider"></div>
+        
+        <!-- Analysis Section -->
+        <div id="analysis-section" class="mb-8">
+          <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
+            <i class="fas fa-chart-line mr-2 text-accent"></i> Failure Trends
+          </h2>
+          <div id="analysis-content">
+            <canvas id="failureChart" class="w-full max-h-96"></canvas>
+          </div>
+        </div>
+        <div class="section-divider"></div>
+        
+        <!-- Prediction Section -->
+        <div id="prediction-section">
+          <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
+            <i class="fas fa-exclamation-triangle mr-2 text-accent"></i> Maintenance Predictions
+          </h2>
+          <div id="prediction-content">
+            <ul id="predictions" class="list-disc list-inside text-secondary"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let token = null;
+    let chartInstance = null;
+
+    async function signup() {
+      const username = document.getElementById('signup-username').value;
+      const password = document.getElementById('signup-password').value;
+      try {
+        const response = await fetch('http://localhost:5001/api/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password }),
+        });
+        const data = await response.json();
+        if (data.token) {
+          token = data.token;
+          toggleSections(true);
+          fetchAnalysis();
+          fetchPredictions();
+        } else {
+          alert(data.message || 'Signup failed');
+        }
+      } catch (err) {
+        alert('Error signing up');
+      }
+    }
+
+    async function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      try {
+        const response = await fetch('http://localhost:5001/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password }),
+        });
+        const data = await response.json();
+        if (data.token) {
+          token = data.token;
+          toggleSections(true);
+          fetchAnalysis();
+          fetchPredictions();
+        } else {
+          alert(data.message || 'Login failed');
+        }
+      } catch (err) {
+        alert('Error logging in');
+      }
+    }
+
+    function logout() {
+      token = null;
+      toggleSections(false);
+      // Clear the chart and predictions
+      if (chartInstance) {
+        chartInstance.destroy();
+        chartInstance = null;
+      }
+      document.getElementById('predictions').innerHTML = '';
+      document.getElementById('analysis-section').innerHTML = '<h2 class="text-xl font-semibold text-gray-700 mb-4">Failure Trends</h2><canvas id="failureChart" class="w-full"></canvas>';
+    }
+
+    function toggleSections(isLoggedIn) {
+      const authSection = document.getElementById('auth-section');
+      const mainSection = document.getElementById('main-section');
+      if (isLoggedIn) {
+        authSection.classList.remove('visible');
+        authSection.classList.add('hidden');
+        mainSection.classList.remove('hidden');
+        mainSection.classList.add('visible');
+      } else {
+        mainSection.classList.remove('visible');
+        mainSection.classList.add('hidden');
+        authSection.classList.remove('hidden');
+        authSection.classList.add('visible');
+      }
+    }
+
+    async function uploadLogs() {
+      const file = document.getElementById('logFile').files[0];
+      const formData = new FormData();
+      formData.append('logs', file);
+      try {
+        const response = await fetch('http://localhost:5001/api/logs/upload', {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}` },
+          body: formData,
+        });
+        const data = await response.json();
+        alert(data.message);
+        fetchAnalysis();
+        fetchPredictions();
+      } catch (err) {
+        alert('Error uploading logs');
+      }
+    }
+
+    async function clearLogs() {
+      try {
+        const response = await fetch('http://localhost:5001/api/logs/clear', {
+          method: 'DELETE',
+          headers: { 'Authorization': `Bearer ${token}` },
+        });
+        const data = await response.json();
+        alert(data.message);
+        fetchAnalysis();
+        fetchPredictions();
+      } catch (err) {
+        alert('Error clearing logs');
+      }
+    }
+
+    async function fetchAnalysis() {
+      try {
+        const response = await fetch('http://localhost:5001/api/logs/analyze', {
+          headers: { 'Authorization': `Bearer ${token}` },
+        });
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Analysis data:', data);
+        renderChart(data);
+      } catch (err) {
+        console.error('Error fetching analysis:', err);
+        document.getElementById('analysis-section').innerHTML = '<h2 class="text-xl font-semibold text-gray-700 mb-4">Failure Trends</h2><p class="text-red-500">Error loading data</p><canvas id="failureChart" class="w-full"></canvas>';
+      }
+    }
+
+    function renderChart(data) {
+      console.log('Rendering chart with data:', data);
+      const ctx = document.getElementById('failureChart').getContext('2d');
+      if (typeof chartInstance !== 'undefined' && chartInstance) {
+        console.log('Destroying previous chart instance');
+        chartInstance.destroy();
+        chartInstance = null;
+      }
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+      if (!data || data.length === 0) {
+        console.log('No failure data to render');
+        document.getElementById('analysis-section').innerHTML = '<h2 class="text-xl font-semibold text-gray-700 mb-4">Failure Trends</h2><p class="text-gray-500">No failure data available</p><canvas id="failureChart" class="w-full"></canvas>';
+        return;
+      }
+
+      const maxMonth = Math.max(...data.map(d => d.month), 5);
+      const allMonths = Array.from({ length: maxMonth }, (_, i) => i + 1);
+      const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const labels = allMonths.map(month => monthNames[month - 1]);
+      const failureData = allMonths.map(month => {
+        const monthData = data.find(d => d.month === month);
+        return monthData ? monthData.failures : 0;
+      });
+
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Component Failures',
+            data: failureData,
+            borderColor: '#3B82F6',
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            fill: true,
+            tension: 0.4,
+          }],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: { 
+              beginAtZero: true, 
+              title: { display: true, text: 'Failures', font: { size: 14 } },
+              ticks: { stepSize: 1 }
+            },
+            x: { 
+              title: { display: true, text: 'Month', font: { size: 14 } }
+            },
+          },
+          plugins: {
+            legend: {
+              labels: { font: { size: 14 } }
+            }
+          }
+        },
+      });
+      console.log('New chart instance created:', chartInstance);
+    }
+
+    async function fetchPredictions() {
+      try {
+        const response = await fetch('http://localhost:5001/api/logs/predict', {
+          headers: { 'Authorization': `Bearer ${token}` },
+        });
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        const predictionsList = document.getElementById('predictions');
+        predictionsList.innerHTML = '';
+        if (data.predictions.length === 0) {
+          predictionsList.innerHTML = '<li class="text-gray-500">No maintenance required at this time.</li>';
+        } else {
+          data.predictions.forEach(p => {
+            const li = document.createElement('li');
+            li.textContent = `Component ${p.component} on Aircraft ${p.aircraftId} needs maintenance`;
+            predictionsList.appendChild(li);
+          });
+        }
+      } catch (err) {
+        console.error('Error fetching predictions:', err);
+        document.getElementById('predictions').innerHTML = '<li class="text-red-500">Error loading predictions</li>';
+      }
+    }
+  </script>
+</body>
+</html>
