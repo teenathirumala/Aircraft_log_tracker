@@ -7,7 +7,7 @@ A full-stack web application to analyze aircraft maintenance logs, visualize fai
 - **Log Upload**: Upload maintenance logs in JSON format, stored in MongoDB Atlas.
 - **Failure Trends**: Visualize component failures over time using Chart.js, including months with 0 failures (e.g., March 2025).
 - **Maintenance Predictions**: Predict maintenance needs based on historical data (e.g., components exceeding 1.5x average hours since last maintenance).
-- **Classy UI**: Responsive design with Tailwind CSS, Poppins font, Font Awesome icons, a sophisticated color scheme (Deep Navy, Warm Gold), and a custom aviation-themed background.
+- **Classy UI**
 - **Containerization**: Dockerized for consistent deployment across environments.
 - **Deployment**: Hosted on Render with MongoDB Atlas for data storage.
 
@@ -17,16 +17,6 @@ A full-stack web application to analyze aircraft maintenance logs, visualize fai
 - **Database**: MongoDB Atlas
 - **Containerization**: Docker
 - **Deployment**: Render
-
-## Demo
-[Watch the demo video](https://your-video-link-here)
-
-## Screenshots
-### User Interface
-![UI Screenshot](screenshots/ui-screenshot.png)
-
-### MongoDB Atlas Data
-![MongoDB Atlas Screenshot](screenshots/atlas-screenshot.png)
 
 ## Setup Instructions
 
