@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: aircraft-log-tracker-backend
+    env: node
+    plan: free # You can change to 'starter' or other plans based on your needs
+    region: oregon # Choose a region, e.g., 'oregon', 'ohio', 'singapore', etc.
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18 # Specify the Node.js version; adjust if needed
+      - key: PORT
+        value: 5001 # Render will override this with its assigned port
+      - key: MONGO_URI
+        sync: false # This will prompt you to set the value in the Render dashboard for security
+      - key: JWT_SECRET
+        sync: false # This will prompt you to set the value in the Render dashboard
+    autoDeploy: false # Set to true if you want automatic deploys on git push
