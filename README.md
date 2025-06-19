@@ -1,6 +1,6 @@
 # Aircraft Maintenance Log Analyzer
 
-A full-stack web application to analyze aircraft maintenance logs, visualize failure trends, and predict maintenance needs. Built as part of my internship portfolio for Boeing, this project demonstrates skills in full-stack development, UI/UX design, data visualization, containerization, and deployment.
+A full-stack web application to analyze aircraft maintenance logs, visualize failure trends, and predict maintenance needs. Built this project demonstrates skills in full-stack development, UI/UX design, data visualization, containerization, and deployment.
 
 ## Features
 - **User Authentication**: Secure signup/login with JWT and bcrypt.
