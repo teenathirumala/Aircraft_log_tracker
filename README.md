@@ -31,9 +31,6 @@ A full-stack web application to analyze aircraft maintenance logs, visualize fai
    ```bash
    git clone https://github.com/your-username/aircraft_log_tracker.git
    cd aircraft_log_tracker
-<<<<<<< HEAD
-   
-=======
    ```
 2. **Backend Setup**:
    ```bash
@@ -71,4 +68,3 @@ This is the easiest way to get the entire application running.
    ```bash
    docker-compose down
    ```
->>>>>>> 300fe84 (added rbac, dockerized whole project)
