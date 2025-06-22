@@ -30,13 +30,13 @@ services:
   # -----------------
   # Frontend Static Site
   # -----------------
-  - type: staticsite # This service type is optimized for static files (HTML, CSS, JS)
+  - type: static_site # Corrected type from "staticsite" to "static_site"
     name: aircraft-client
     
     # --- Build Configuration ---
     # Render will automatically use a simple web server for static sites.
     # No build command is needed if you are not using a framework like React/Vue.
-    repo: https://github.com/teenathirumala/aircraft_log_tracker.git # IMPORTANT: Change this to your repository URL
+    repo: https://github.com/your-username/aircraft_log_tracker.git # IMPORTANT: Change this to your repository URL
     buildFilter:
       paths:
       - client/**
