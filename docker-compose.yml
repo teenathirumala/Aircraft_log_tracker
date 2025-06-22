@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     container_name: aircraft_log_server
     restart: unless-stopped
-    env_file: ./server/.env # Pass environment variables from the .env file
+    env_file: /Users/teena/Documents/aircraft_log_tracker/.env # Pass environment variables from the .env file
     ports:
       - "5001:5001"
     networks:
