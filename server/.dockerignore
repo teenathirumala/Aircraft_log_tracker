@@ -1,0 +1,18 @@
+# Ignore dependency directories. This is the most important one.
+# We want npm inside the container to install dependencies from package.json,
+# not copy our local node_modules folder.
+node_modules
+
+# Ignore local environment files. These should be managed by the
+# deployment environment, not baked into the image.
+.env
+*.env
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore IDE and editor folders
+.vscode
+.idea 

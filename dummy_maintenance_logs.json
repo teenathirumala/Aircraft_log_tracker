@@ -1,0 +1,2102 @@
+[
+  {
+    "aircraftId": "AIRBUS-A320-9903",
+    "component": "Landing Gear",
+    "date": "2024-12-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 114
+  },
+  {
+    "aircraftId": "BOEING-737-9650",
+    "component": "Avionics",
+    "date": "2025-05-22",
+    "failure": false,
+    "hoursSinceLastMaintenance": 106
+  },
+  {
+    "aircraftId": "AIRBUS-A350-3608",
+    "component": "Hydraulics",
+    "date": "2024-01-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 208
+  },
+  {
+    "aircraftId": "BOEING-737-2957",
+    "component": "Hydraulics",
+    "date": "2025-04-19",
+    "failure": false,
+    "hoursSinceLastMaintenance": 23
+  },
+  {
+    "aircraftId": "BOEING-737-6471",
+    "component": "Wing",
+    "date": "2024-01-31",
+    "failure": false,
+    "hoursSinceLastMaintenance": 277
+  },
+  {
+    "aircraftId": "BOEING-737-5783",
+    "component": "Landing Gear",
+    "date": "2025-06-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 29
+  },
+  {
+    "aircraftId": "BOEING-737-8573",
+    "component": "Landing Gear",
+    "date": "2025-04-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 181
+  },
+  {
+    "aircraftId": "BOEING-737-4550",
+    "component": "Engine",
+    "date": "2024-01-07",
+    "failure": false,
+    "hoursSinceLastMaintenance": 239
+  },
+  {
+    "aircraftId": "AIRBUS-A320-3076",
+    "component": "Hydraulics",
+    "date": "2024-05-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 261
+  },
+  {
+    "aircraftId": "AIRBUS-A320-7643",
+    "component": "Wing",
+    "date": "2024-06-12",
+    "failure": false,
+    "hoursSinceLastMaintenance": 98
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6036",
+    "component": "Avionics",
+    "date": "2024-06-26",
+    "failure": false,
+    "hoursSinceLastMaintenance": 102
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4902",
+    "component": "Engine",
+    "date": "2024-05-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 113
+  },
+  {
+    "aircraftId": "BOEING-787-7528",
+    "component": "Hydraulics",
+    "date": "2024-05-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 105
+  },
+  {
+    "aircraftId": "BOEING-777-7772",
+    "component": "Engine",
+    "date": "2024-01-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 261
+  },
+  {
+    "aircraftId": "BOEING-787-3692",
+    "component": "Hydraulics",
+    "date": "2025-06-11",
+    "failure": false,
+    "hoursSinceLastMaintenance": 286
+  },
+  {
+    "aircraftId": "BOEING-787-9314",
+    "component": "Landing Gear",
+    "date": "2024-09-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 109
+  },
+  {
+    "aircraftId": "BOEING-737-4944",
+    "component": "Hydraulics",
+    "date": "2024-11-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 236
+  },
+  {
+    "aircraftId": "BOEING-787-8972",
+    "component": "Hydraulics",
+    "date": "2024-05-31",
+    "failure": false,
+    "hoursSinceLastMaintenance": 82
+  },
+  {
+    "aircraftId": "AIRBUS-A350-7215",
+    "component": "Hydraulics",
+    "date": "2025-04-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 34
+  },
+  {
+    "aircraftId": "BOEING-787-6018",
+    "component": "Wing",
+    "date": "2025-04-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 120
+  },
+  {
+    "aircraftId": "BOEING-787-5387",
+    "component": "Engine",
+    "date": "2024-12-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 168
+  },
+  {
+    "aircraftId": "AIRBUS-A350-3049",
+    "component": "Engine",
+    "date": "2024-10-04",
+    "failure": false,
+    "hoursSinceLastMaintenance": 109
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4540",
+    "component": "Engine",
+    "date": "2024-08-04",
+    "failure": false,
+    "hoursSinceLastMaintenance": 246
+  },
+  {
+    "aircraftId": "BOEING-777-6011",
+    "component": "Hydraulics",
+    "date": "2024-06-11",
+    "failure": false,
+    "hoursSinceLastMaintenance": 151
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6576",
+    "component": "Hydraulics",
+    "date": "2024-09-07",
+    "failure": false,
+    "hoursSinceLastMaintenance": 148
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5977",
+    "component": "Landing Gear",
+    "date": "2024-01-18",
+    "failure": true,
+    "hoursSinceLastMaintenance": 228
+  },
+  {
+    "aircraftId": "BOEING-737-6512",
+    "component": "Hydraulics",
+    "date": "2025-04-29",
+    "failure": false,
+    "hoursSinceLastMaintenance": 291
+  },
+  {
+    "aircraftId": "BOEING-787-7642",
+    "component": "Hydraulics",
+    "date": "2025-05-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 27
+  },
+  {
+    "aircraftId": "AIRBUS-A350-9288",
+    "component": "Hydraulics",
+    "date": "2024-10-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 54
+  },
+  {
+    "aircraftId": "BOEING-737-6730",
+    "component": "Hydraulics",
+    "date": "2024-10-24",
+    "failure": true,
+    "hoursSinceLastMaintenance": 208
+  },
+  {
+    "aircraftId": "BOEING-737-6630",
+    "component": "Avionics",
+    "date": "2025-01-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 113
+  },
+  {
+    "aircraftId": "BOEING-777-3098",
+    "component": "Engine",
+    "date": "2024-09-12",
+    "failure": false,
+    "hoursSinceLastMaintenance": 95
+  },
+  {
+    "aircraftId": "AIRBUS-A320-3548",
+    "component": "Landing Gear",
+    "date": "2024-10-19",
+    "failure": false,
+    "hoursSinceLastMaintenance": 82
+  },
+  {
+    "aircraftId": "AIRBUS-A320-9297",
+    "component": "Landing Gear",
+    "date": "2025-04-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 106
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6457",
+    "component": "Hydraulics",
+    "date": "2024-07-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 172
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5250",
+    "component": "Landing Gear",
+    "date": "2024-04-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 75
+  },
+  {
+    "aircraftId": "BOEING-737-5852",
+    "component": "Avionics",
+    "date": "2024-04-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 127
+  },
+  {
+    "aircraftId": "BOEING-787-5259",
+    "component": "Wing",
+    "date": "2024-04-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 172
+  },
+  {
+    "aircraftId": "BOEING-787-4707",
+    "component": "Landing Gear",
+    "date": "2025-04-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 74
+  },
+  {
+    "aircraftId": "AIRBUS-A320-3034",
+    "component": "Hydraulics",
+    "date": "2025-05-06",
+    "failure": false,
+    "hoursSinceLastMaintenance": 209
+  },
+  {
+    "aircraftId": "BOEING-787-3984",
+    "component": "Hydraulics",
+    "date": "2024-10-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 290
+  },
+  {
+    "aircraftId": "BOEING-787-9003",
+    "component": "Hydraulics",
+    "date": "2024-05-11",
+    "failure": false,
+    "hoursSinceLastMaintenance": 242
+  },
+  {
+    "aircraftId": "AIRBUS-A320-9689",
+    "component": "Hydraulics",
+    "date": "2024-06-04",
+    "failure": false,
+    "hoursSinceLastMaintenance": 66
+  },
+  {
+    "aircraftId": "BOEING-737-9937",
+    "component": "Hydraulics",
+    "date": "2024-12-04",
+    "failure": false,
+    "hoursSinceLastMaintenance": 56
+  },
+  {
+    "aircraftId": "BOEING-787-3816",
+    "component": "Wing",
+    "date": "2025-05-15",
+    "failure": true,
+    "hoursSinceLastMaintenance": 263
+  },
+  {
+    "aircraftId": "BOEING-787-8673",
+    "component": "Avionics",
+    "date": "2024-07-29",
+    "failure": false,
+    "hoursSinceLastMaintenance": 54
+  },
+  {
+    "aircraftId": "AIRBUS-A320-9518",
+    "component": "Landing Gear",
+    "date": "2024-03-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 206
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4055",
+    "component": "Wing",
+    "date": "2024-04-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 237
+  },
+  {
+    "aircraftId": "BOEING-777-1813",
+    "component": "Avionics",
+    "date": "2024-06-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 64
+  },
+  {
+    "aircraftId": "BOEING-787-6402",
+    "component": "Wing",
+    "date": "2024-02-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 27
+  },
+  {
+    "aircraftId": "AIRBUS-A320-8435",
+    "component": "Avionics",
+    "date": "2024-08-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 105
+  },
+  {
+    "aircraftId": "AIRBUS-A320-7228",
+    "component": "Landing Gear",
+    "date": "2024-02-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 177
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4469",
+    "component": "Avionics",
+    "date": "2024-06-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 92
+  },
+  {
+    "aircraftId": "BOEING-787-7559",
+    "component": "Avionics",
+    "date": "2024-01-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 246
+  },
+  {
+    "aircraftId": "AIRBUS-A350-7566",
+    "component": "Wing",
+    "date": "2024-07-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 210
+  },
+  {
+    "aircraftId": "BOEING-787-5770",
+    "component": "Landing Gear",
+    "date": "2024-03-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 148
+  },
+  {
+    "aircraftId": "BOEING-777-9783",
+    "component": "Hydraulics",
+    "date": "2025-01-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 95
+  },
+  {
+    "aircraftId": "BOEING-737-2563",
+    "component": "Engine",
+    "date": "2024-04-10",
+    "failure": true,
+    "hoursSinceLastMaintenance": 181
+  },
+  {
+    "aircraftId": "BOEING-737-2801",
+    "component": "Avionics",
+    "date": "2024-04-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 274
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6999",
+    "component": "Avionics",
+    "date": "2024-09-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 58
+  },
+  {
+    "aircraftId": "AIRBUS-A350-3653",
+    "component": "Engine",
+    "date": "2024-12-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 229
+  },
+  {
+    "aircraftId": "BOEING-737-8394",
+    "component": "Landing Gear",
+    "date": "2024-07-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 275
+  },
+  {
+    "aircraftId": "BOEING-737-7022",
+    "component": "Wing",
+    "date": "2024-02-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 285
+  },
+  {
+    "aircraftId": "BOEING-737-6653",
+    "component": "Hydraulics",
+    "date": "2024-02-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 92
+  },
+  {
+    "aircraftId": "BOEING-737-1333",
+    "component": "Hydraulics",
+    "date": "2024-07-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 216
+  },
+  {
+    "aircraftId": "BOEING-777-7829",
+    "component": "Landing Gear",
+    "date": "2024-08-07",
+    "failure": false,
+    "hoursSinceLastMaintenance": 137
+  },
+  {
+    "aircraftId": "BOEING-737-3769",
+    "component": "Hydraulics",
+    "date": "2024-06-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 120
+  },
+  {
+    "aircraftId": "BOEING-777-4988",
+    "component": "Landing Gear",
+    "date": "2025-01-25",
+    "failure": true,
+    "hoursSinceLastMaintenance": 65
+  },
+  {
+    "aircraftId": "BOEING-777-8038",
+    "component": "Hydraulics",
+    "date": "2024-10-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 34
+  },
+  {
+    "aircraftId": "BOEING-777-9597",
+    "component": "Avionics",
+    "date": "2024-08-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 109
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6149",
+    "component": "Wing",
+    "date": "2024-11-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 79
+  },
+  {
+    "aircraftId": "AIRBUS-A320-7360",
+    "component": "Hydraulics",
+    "date": "2024-04-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 154
+  },
+  {
+    "aircraftId": "BOEING-777-4114",
+    "component": "Landing Gear",
+    "date": "2025-05-11",
+    "failure": false,
+    "hoursSinceLastMaintenance": 35
+  },
+  {
+    "aircraftId": "BOEING-787-3288",
+    "component": "Hydraulics",
+    "date": "2024-07-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 130
+  },
+  {
+    "aircraftId": "BOEING-737-3871",
+    "component": "Wing",
+    "date": "2024-07-29",
+    "failure": false,
+    "hoursSinceLastMaintenance": 105
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6831",
+    "component": "Hydraulics",
+    "date": "2025-05-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 211
+  },
+  {
+    "aircraftId": "BOEING-737-9973",
+    "component": "Engine",
+    "date": "2024-01-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 290
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6086",
+    "component": "Wing",
+    "date": "2025-01-11",
+    "failure": true,
+    "hoursSinceLastMaintenance": 293
+  },
+  {
+    "aircraftId": "BOEING-787-8689",
+    "component": "Hydraulics",
+    "date": "2025-04-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 40
+  },
+  {
+    "aircraftId": "BOEING-787-3206",
+    "component": "Engine",
+    "date": "2024-04-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 156
+  },
+  {
+    "aircraftId": "AIRBUS-A320-2972",
+    "component": "Wing",
+    "date": "2024-07-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 228
+  },
+  {
+    "aircraftId": "BOEING-787-6264",
+    "component": "Landing Gear",
+    "date": "2025-03-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 142
+  },
+  {
+    "aircraftId": "AIRBUS-A350-8279",
+    "component": "Wing",
+    "date": "2024-07-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 95
+  },
+  {
+    "aircraftId": "AIRBUS-A350-1147",
+    "component": "Avionics",
+    "date": "2024-02-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 268
+  },
+  {
+    "aircraftId": "AIRBUS-A320-9431",
+    "component": "Wing",
+    "date": "2025-06-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 84
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5815",
+    "component": "Wing",
+    "date": "2024-10-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 63
+  },
+  {
+    "aircraftId": "AIRBUS-A350-3343",
+    "component": "Hydraulics",
+    "date": "2025-05-04",
+    "failure": false,
+    "hoursSinceLastMaintenance": 157
+  },
+  {
+    "aircraftId": "BOEING-737-8038",
+    "component": "Wing",
+    "date": "2025-02-28",
+    "failure": true,
+    "hoursSinceLastMaintenance": 274
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1678",
+    "component": "Landing Gear",
+    "date": "2024-04-29",
+    "failure": false,
+    "hoursSinceLastMaintenance": 41
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4354",
+    "component": "Landing Gear",
+    "date": "2024-08-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 191
+  },
+  {
+    "aircraftId": "AIRBUS-A350-3051",
+    "component": "Engine",
+    "date": "2024-10-19",
+    "failure": true,
+    "hoursSinceLastMaintenance": 297
+  },
+  {
+    "aircraftId": "BOEING-737-5818",
+    "component": "Wing",
+    "date": "2024-05-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 30
+  },
+  {
+    "aircraftId": "BOEING-787-2253",
+    "component": "Wing",
+    "date": "2024-01-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 127
+  },
+  {
+    "aircraftId": "BOEING-777-4070",
+    "component": "Hydraulics",
+    "date": "2024-04-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 205
+  },
+  {
+    "aircraftId": "BOEING-787-5472",
+    "component": "Wing",
+    "date": "2024-11-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 183
+  },
+  {
+    "aircraftId": "BOEING-737-6389",
+    "component": "Landing Gear",
+    "date": "2024-10-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 103
+  },
+  {
+    "aircraftId": "BOEING-737-3242",
+    "component": "Engine",
+    "date": "2025-05-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 114
+  },
+  {
+    "aircraftId": "BOEING-787-5028",
+    "component": "Engine",
+    "date": "2024-04-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 100
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6523",
+    "component": "Landing Gear",
+    "date": "2024-08-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 254
+  },
+  {
+    "aircraftId": "BOEING-777-7428",
+    "component": "Engine",
+    "date": "2025-06-07",
+    "failure": false,
+    "hoursSinceLastMaintenance": 189
+  },
+  {
+    "aircraftId": "BOEING-737-6981",
+    "component": "Hydraulics",
+    "date": "2024-10-30",
+    "failure": true,
+    "hoursSinceLastMaintenance": 251
+  },
+  {
+    "aircraftId": "BOEING-777-3728",
+    "component": "Hydraulics",
+    "date": "2024-03-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 25
+  },
+  {
+    "aircraftId": "BOEING-777-3051",
+    "component": "Hydraulics",
+    "date": "2025-02-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 251
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6359",
+    "component": "Engine",
+    "date": "2025-05-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 99
+  },
+  {
+    "aircraftId": "BOEING-787-9437",
+    "component": "Engine",
+    "date": "2024-04-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 286
+  },
+  {
+    "aircraftId": "BOEING-777-2603",
+    "component": "Wing",
+    "date": "2024-08-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 107
+  },
+  {
+    "aircraftId": "BOEING-737-7521",
+    "component": "Wing",
+    "date": "2025-05-26",
+    "failure": false,
+    "hoursSinceLastMaintenance": 175
+  },
+  {
+    "aircraftId": "BOEING-787-2953",
+    "component": "Landing Gear",
+    "date": "2024-06-06",
+    "failure": false,
+    "hoursSinceLastMaintenance": 135
+  },
+  {
+    "aircraftId": "BOEING-787-6183",
+    "component": "Engine",
+    "date": "2025-01-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 110
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4955",
+    "component": "Hydraulics",
+    "date": "2024-06-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 119
+  },
+  {
+    "aircraftId": "BOEING-787-4386",
+    "component": "Landing Gear",
+    "date": "2025-05-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 191
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1304",
+    "component": "Avionics",
+    "date": "2025-02-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 147
+  },
+  {
+    "aircraftId": "AIRBUS-A350-8375",
+    "component": "Engine",
+    "date": "2024-12-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 36
+  },
+  {
+    "aircraftId": "BOEING-787-3317",
+    "component": "Wing",
+    "date": "2024-06-22",
+    "failure": false,
+    "hoursSinceLastMaintenance": 155
+  },
+  {
+    "aircraftId": "BOEING-777-9244",
+    "component": "Engine",
+    "date": "2025-04-07",
+    "failure": true,
+    "hoursSinceLastMaintenance": 181
+  },
+  {
+    "aircraftId": "BOEING-787-4244",
+    "component": "Avionics",
+    "date": "2024-05-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 228
+  },
+  {
+    "aircraftId": "BOEING-737-5400",
+    "component": "Hydraulics",
+    "date": "2024-08-02",
+    "failure": true,
+    "hoursSinceLastMaintenance": 172
+  },
+  {
+    "aircraftId": "BOEING-777-6447",
+    "component": "Hydraulics",
+    "date": "2024-07-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 222
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4740",
+    "component": "Hydraulics",
+    "date": "2024-02-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 291
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4027",
+    "component": "Avionics",
+    "date": "2025-05-29",
+    "failure": false,
+    "hoursSinceLastMaintenance": 147
+  },
+  {
+    "aircraftId": "AIRBUS-A350-9190",
+    "component": "Hydraulics",
+    "date": "2024-01-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 68
+  },
+  {
+    "aircraftId": "BOEING-777-5333",
+    "component": "Engine",
+    "date": "2024-06-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 258
+  },
+  {
+    "aircraftId": "BOEING-777-9169",
+    "component": "Avionics",
+    "date": "2025-03-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 141
+  },
+  {
+    "aircraftId": "AIRBUS-A350-9044",
+    "component": "Engine",
+    "date": "2024-07-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 224
+  },
+  {
+    "aircraftId": "BOEING-737-2014",
+    "component": "Engine",
+    "date": "2024-01-22",
+    "failure": false,
+    "hoursSinceLastMaintenance": 228
+  },
+  {
+    "aircraftId": "BOEING-777-5233",
+    "component": "Engine",
+    "date": "2024-03-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 111
+  },
+  {
+    "aircraftId": "BOEING-777-9562",
+    "component": "Landing Gear",
+    "date": "2024-10-11",
+    "failure": false,
+    "hoursSinceLastMaintenance": 126
+  },
+  {
+    "aircraftId": "BOEING-787-9137",
+    "component": "Hydraulics",
+    "date": "2024-09-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 253
+  },
+  {
+    "aircraftId": "BOEING-787-6009",
+    "component": "Avionics",
+    "date": "2024-08-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 22
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6482",
+    "component": "Engine",
+    "date": "2024-01-28",
+    "failure": true,
+    "hoursSinceLastMaintenance": 35
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1000",
+    "component": "Hydraulics",
+    "date": "2025-04-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 278
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5427",
+    "component": "Landing Gear",
+    "date": "2025-04-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 252
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1329",
+    "component": "Wing",
+    "date": "2024-08-24",
+    "failure": true,
+    "hoursSinceLastMaintenance": 245
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4684",
+    "component": "Hydraulics",
+    "date": "2024-03-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 194
+  },
+  {
+    "aircraftId": "AIRBUS-A320-7680",
+    "component": "Engine",
+    "date": "2024-01-31",
+    "failure": false,
+    "hoursSinceLastMaintenance": 94
+  },
+  {
+    "aircraftId": "BOEING-737-5268",
+    "component": "Avionics",
+    "date": "2024-11-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 127
+  },
+  {
+    "aircraftId": "BOEING-777-2175",
+    "component": "Hydraulics",
+    "date": "2025-05-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 38
+  },
+  {
+    "aircraftId": "BOEING-777-8181",
+    "component": "Hydraulics",
+    "date": "2024-01-01",
+    "failure": false,
+    "hoursSinceLastMaintenance": 202
+  },
+  {
+    "aircraftId": "BOEING-777-5515",
+    "component": "Landing Gear",
+    "date": "2024-11-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 42
+  },
+  {
+    "aircraftId": "AIRBUS-A350-5023",
+    "component": "Avionics",
+    "date": "2025-02-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 202
+  },
+  {
+    "aircraftId": "BOEING-787-7153",
+    "component": "Engine",
+    "date": "2024-07-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 55
+  },
+  {
+    "aircraftId": "BOEING-777-5513",
+    "component": "Landing Gear",
+    "date": "2024-07-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 216
+  },
+  {
+    "aircraftId": "BOEING-787-8674",
+    "component": "Hydraulics",
+    "date": "2024-12-31",
+    "failure": false,
+    "hoursSinceLastMaintenance": 156
+  },
+  {
+    "aircraftId": "BOEING-777-5739",
+    "component": "Hydraulics",
+    "date": "2025-02-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 234
+  },
+  {
+    "aircraftId": "BOEING-787-3692",
+    "component": "Engine",
+    "date": "2024-01-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 157
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6448",
+    "component": "Wing",
+    "date": "2024-08-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 135
+  },
+  {
+    "aircraftId": "BOEING-787-2196",
+    "component": "Engine",
+    "date": "2025-04-25",
+    "failure": true,
+    "hoursSinceLastMaintenance": 196
+  },
+  {
+    "aircraftId": "BOEING-777-5027",
+    "component": "Landing Gear",
+    "date": "2025-01-02",
+    "failure": true,
+    "hoursSinceLastMaintenance": 252
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6958",
+    "component": "Hydraulics",
+    "date": "2025-06-08",
+    "failure": true,
+    "hoursSinceLastMaintenance": 244
+  },
+  {
+    "aircraftId": "BOEING-777-8745",
+    "component": "Engine",
+    "date": "2025-04-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 44
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6298",
+    "component": "Engine",
+    "date": "2024-11-01",
+    "failure": true,
+    "hoursSinceLastMaintenance": 259
+  },
+  {
+    "aircraftId": "BOEING-787-3148",
+    "component": "Engine",
+    "date": "2024-08-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 218
+  },
+  {
+    "aircraftId": "BOEING-737-2047",
+    "component": "Landing Gear",
+    "date": "2024-02-19",
+    "failure": false,
+    "hoursSinceLastMaintenance": 266
+  },
+  {
+    "aircraftId": "BOEING-737-2943",
+    "component": "Wing",
+    "date": "2024-04-04",
+    "failure": true,
+    "hoursSinceLastMaintenance": 279
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5747",
+    "component": "Avionics",
+    "date": "2025-03-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 158
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6601",
+    "component": "Wing",
+    "date": "2024-11-28",
+    "failure": true,
+    "hoursSinceLastMaintenance": 234
+  },
+  {
+    "aircraftId": "AIRBUS-A320-8921",
+    "component": "Avionics",
+    "date": "2024-09-20",
+    "failure": true,
+    "hoursSinceLastMaintenance": 280
+  },
+  {
+    "aircraftId": "BOEING-737-9767",
+    "component": "Wing",
+    "date": "2024-03-26",
+    "failure": true,
+    "hoursSinceLastMaintenance": 225
+  },
+  {
+    "aircraftId": "AIRBUS-A350-2757",
+    "component": "Engine",
+    "date": "2024-11-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 211
+  },
+  {
+    "aircraftId": "BOEING-737-6418",
+    "component": "Avionics",
+    "date": "2025-01-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 299
+  },
+  {
+    "aircraftId": "BOEING-737-5146",
+    "component": "Hydraulics",
+    "date": "2025-03-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 82
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4325",
+    "component": "Avionics",
+    "date": "2024-04-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 123
+  },
+  {
+    "aircraftId": "BOEING-787-8158",
+    "component": "Wing",
+    "date": "2024-07-29",
+    "failure": false,
+    "hoursSinceLastMaintenance": 158
+  },
+  {
+    "aircraftId": "AIRBUS-A320-8079",
+    "component": "Avionics",
+    "date": "2024-04-21",
+    "failure": true,
+    "hoursSinceLastMaintenance": 181
+  },
+  {
+    "aircraftId": "BOEING-737-8951",
+    "component": "Wing",
+    "date": "2025-04-16",
+    "failure": true,
+    "hoursSinceLastMaintenance": 178
+  },
+  {
+    "aircraftId": "BOEING-787-8577",
+    "component": "Landing Gear",
+    "date": "2024-03-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 280
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4962",
+    "component": "Wing",
+    "date": "2025-01-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 72
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4383",
+    "component": "Avionics",
+    "date": "2025-02-22",
+    "failure": false,
+    "hoursSinceLastMaintenance": 170
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6806",
+    "component": "Avionics",
+    "date": "2024-09-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 133
+  },
+  {
+    "aircraftId": "AIRBUS-A350-2205",
+    "component": "Landing Gear",
+    "date": "2024-07-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 148
+  },
+  {
+    "aircraftId": "BOEING-777-1375",
+    "component": "Landing Gear",
+    "date": "2025-01-11",
+    "failure": false,
+    "hoursSinceLastMaintenance": 192
+  },
+  {
+    "aircraftId": "AIRBUS-A320-2553",
+    "component": "Hydraulics",
+    "date": "2025-05-25",
+    "failure": true,
+    "hoursSinceLastMaintenance": 257
+  },
+  {
+    "aircraftId": "BOEING-787-1939",
+    "component": "Avionics",
+    "date": "2025-05-14",
+    "failure": true,
+    "hoursSinceLastMaintenance": 283
+  },
+  {
+    "aircraftId": "BOEING-737-3715",
+    "component": "Engine",
+    "date": "2024-11-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 64
+  },
+  {
+    "aircraftId": "BOEING-777-4214",
+    "component": "Wing",
+    "date": "2024-01-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 222
+  },
+  {
+    "aircraftId": "BOEING-737-9656",
+    "component": "Engine",
+    "date": "2024-02-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 119
+  },
+  {
+    "aircraftId": "AIRBUS-A320-7159",
+    "component": "Landing Gear",
+    "date": "2024-03-30",
+    "failure": true,
+    "hoursSinceLastMaintenance": 102
+  },
+  {
+    "aircraftId": "BOEING-737-4772",
+    "component": "Hydraulics",
+    "date": "2025-05-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 170
+  },
+  {
+    "aircraftId": "BOEING-777-6625",
+    "component": "Hydraulics",
+    "date": "2024-02-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 218
+  },
+  {
+    "aircraftId": "AIRBUS-A350-1004",
+    "component": "Engine",
+    "date": "2024-04-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 31
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5857",
+    "component": "Wing",
+    "date": "2024-09-19",
+    "failure": false,
+    "hoursSinceLastMaintenance": 94
+  },
+  {
+    "aircraftId": "AIRBUS-A350-5409",
+    "component": "Engine",
+    "date": "2024-07-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 284
+  },
+  {
+    "aircraftId": "BOEING-787-4958",
+    "component": "Engine",
+    "date": "2024-04-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 103
+  },
+  {
+    "aircraftId": "AIRBUS-A320-3042",
+    "component": "Wing",
+    "date": "2025-03-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 249
+  },
+  {
+    "aircraftId": "BOEING-737-6635",
+    "component": "Wing",
+    "date": "2025-03-15",
+    "failure": true,
+    "hoursSinceLastMaintenance": 166
+  },
+  {
+    "aircraftId": "BOEING-777-1068",
+    "component": "Wing",
+    "date": "2024-02-27",
+    "failure": true,
+    "hoursSinceLastMaintenance": 243
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6551",
+    "component": "Wing",
+    "date": "2025-05-19",
+    "failure": true,
+    "hoursSinceLastMaintenance": 21
+  },
+  {
+    "aircraftId": "AIRBUS-A320-9011",
+    "component": "Wing",
+    "date": "2025-04-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 244
+  },
+  {
+    "aircraftId": "BOEING-787-6636",
+    "component": "Wing",
+    "date": "2024-09-28",
+    "failure": true,
+    "hoursSinceLastMaintenance": 195
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4018",
+    "component": "Wing",
+    "date": "2024-10-01",
+    "failure": false,
+    "hoursSinceLastMaintenance": 24
+  },
+  {
+    "aircraftId": "BOEING-737-1724",
+    "component": "Hydraulics",
+    "date": "2024-08-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 169
+  },
+  {
+    "aircraftId": "BOEING-787-7213",
+    "component": "Hydraulics",
+    "date": "2024-05-19",
+    "failure": false,
+    "hoursSinceLastMaintenance": 210
+  },
+  {
+    "aircraftId": "BOEING-787-7878",
+    "component": "Avionics",
+    "date": "2024-05-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 99
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4025",
+    "component": "Wing",
+    "date": "2024-10-19",
+    "failure": false,
+    "hoursSinceLastMaintenance": 40
+  },
+  {
+    "aircraftId": "BOEING-787-6518",
+    "component": "Hydraulics",
+    "date": "2024-04-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 101
+  },
+  {
+    "aircraftId": "AIRBUS-A350-1512",
+    "component": "Wing",
+    "date": "2024-04-06",
+    "failure": false,
+    "hoursSinceLastMaintenance": 141
+  },
+  {
+    "aircraftId": "BOEING-737-8775",
+    "component": "Hydraulics",
+    "date": "2025-05-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 82
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1468",
+    "component": "Hydraulics",
+    "date": "2024-05-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 288
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4063",
+    "component": "Engine",
+    "date": "2024-10-26",
+    "failure": false,
+    "hoursSinceLastMaintenance": 118
+  },
+  {
+    "aircraftId": "BOEING-777-3784",
+    "component": "Hydraulics",
+    "date": "2025-05-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 136
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1173",
+    "component": "Avionics",
+    "date": "2025-03-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 64
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1192",
+    "component": "Avionics",
+    "date": "2025-03-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 117
+  },
+  {
+    "aircraftId": "BOEING-787-1855",
+    "component": "Landing Gear",
+    "date": "2024-10-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 234
+  },
+  {
+    "aircraftId": "AIRBUS-A350-9528",
+    "component": "Avionics",
+    "date": "2024-04-04",
+    "failure": false,
+    "hoursSinceLastMaintenance": 266
+  },
+  {
+    "aircraftId": "BOEING-777-1950",
+    "component": "Landing Gear",
+    "date": "2024-01-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 75
+  },
+  {
+    "aircraftId": "BOEING-737-8732",
+    "component": "Engine",
+    "date": "2025-05-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 58
+  },
+  {
+    "aircraftId": "BOEING-737-7771",
+    "component": "Wing",
+    "date": "2024-10-04",
+    "failure": false,
+    "hoursSinceLastMaintenance": 115
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6962",
+    "component": "Wing",
+    "date": "2025-03-22",
+    "failure": false,
+    "hoursSinceLastMaintenance": 21
+  },
+  {
+    "aircraftId": "AIRBUS-A320-9228",
+    "component": "Landing Gear",
+    "date": "2025-05-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 55
+  },
+  {
+    "aircraftId": "BOEING-737-7509",
+    "component": "Landing Gear",
+    "date": "2024-07-26",
+    "failure": true,
+    "hoursSinceLastMaintenance": 229
+  },
+  {
+    "aircraftId": "BOEING-787-8640",
+    "component": "Landing Gear",
+    "date": "2024-05-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 67
+  },
+  {
+    "aircraftId": "BOEING-737-5321",
+    "component": "Avionics",
+    "date": "2024-05-27",
+    "failure": true,
+    "hoursSinceLastMaintenance": 186
+  },
+  {
+    "aircraftId": "BOEING-787-2608",
+    "component": "Avionics",
+    "date": "2024-01-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 100
+  },
+  {
+    "aircraftId": "BOEING-777-8343",
+    "component": "Avionics",
+    "date": "2024-02-06",
+    "failure": false,
+    "hoursSinceLastMaintenance": 31
+  },
+  {
+    "aircraftId": "BOEING-737-9311",
+    "component": "Engine",
+    "date": "2024-04-23",
+    "failure": true,
+    "hoursSinceLastMaintenance": 192
+  },
+  {
+    "aircraftId": "AIRBUS-A320-7505",
+    "component": "Wing",
+    "date": "2025-06-10",
+    "failure": true,
+    "hoursSinceLastMaintenance": 243
+  },
+  {
+    "aircraftId": "AIRBUS-A320-7957",
+    "component": "Landing Gear",
+    "date": "2024-08-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 181
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6819",
+    "component": "Wing",
+    "date": "2024-01-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 91
+  },
+  {
+    "aircraftId": "AIRBUS-A320-2900",
+    "component": "Wing",
+    "date": "2025-03-12",
+    "failure": true,
+    "hoursSinceLastMaintenance": 216
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4415",
+    "component": "Landing Gear",
+    "date": "2024-08-06",
+    "failure": true,
+    "hoursSinceLastMaintenance": 254
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4597",
+    "component": "Avionics",
+    "date": "2024-03-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 165
+  },
+  {
+    "aircraftId": "BOEING-737-3380",
+    "component": "Wing",
+    "date": "2025-02-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 202
+  },
+  {
+    "aircraftId": "BOEING-787-9156",
+    "component": "Hydraulics",
+    "date": "2024-10-16",
+    "failure": false,
+    "hoursSinceLastMaintenance": 39
+  },
+  {
+    "aircraftId": "BOEING-787-5020",
+    "component": "Engine",
+    "date": "2024-06-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 184
+  },
+  {
+    "aircraftId": "BOEING-787-9680",
+    "component": "Wing",
+    "date": "2024-09-26",
+    "failure": false,
+    "hoursSinceLastMaintenance": 72
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1098",
+    "component": "Engine",
+    "date": "2024-12-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 21
+  },
+  {
+    "aircraftId": "BOEING-787-6811",
+    "component": "Hydraulics",
+    "date": "2024-03-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 79
+  },
+  {
+    "aircraftId": "BOEING-777-2811",
+    "component": "Hydraulics",
+    "date": "2025-02-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 283
+  },
+  {
+    "aircraftId": "AIRBUS-A320-8188",
+    "component": "Hydraulics",
+    "date": "2024-10-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 66
+  },
+  {
+    "aircraftId": "BOEING-737-8956",
+    "component": "Landing Gear",
+    "date": "2024-10-12",
+    "failure": false,
+    "hoursSinceLastMaintenance": 71
+  },
+  {
+    "aircraftId": "BOEING-787-7123",
+    "component": "Engine",
+    "date": "2025-04-10",
+    "failure": true,
+    "hoursSinceLastMaintenance": 171
+  },
+  {
+    "aircraftId": "BOEING-787-7849",
+    "component": "Landing Gear",
+    "date": "2024-03-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 72
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1951",
+    "component": "Engine",
+    "date": "2024-01-01",
+    "failure": true,
+    "hoursSinceLastMaintenance": 185
+  },
+  {
+    "aircraftId": "BOEING-777-8507",
+    "component": "Avionics",
+    "date": "2025-02-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 104
+  },
+  {
+    "aircraftId": "BOEING-737-3049",
+    "component": "Engine",
+    "date": "2025-05-01",
+    "failure": false,
+    "hoursSinceLastMaintenance": 204
+  },
+  {
+    "aircraftId": "AIRBUS-A350-2403",
+    "component": "Avionics",
+    "date": "2025-02-08",
+    "failure": true,
+    "hoursSinceLastMaintenance": 248
+  },
+  {
+    "aircraftId": "BOEING-737-5574",
+    "component": "Wing",
+    "date": "2024-08-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 158
+  },
+  {
+    "aircraftId": "BOEING-787-1835",
+    "component": "Wing",
+    "date": "2025-05-22",
+    "failure": false,
+    "hoursSinceLastMaintenance": 96
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4463",
+    "component": "Avionics",
+    "date": "2025-03-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 147
+  },
+  {
+    "aircraftId": "BOEING-787-1911",
+    "component": "Hydraulics",
+    "date": "2025-04-28",
+    "failure": false,
+    "hoursSinceLastMaintenance": 147
+  },
+  {
+    "aircraftId": "BOEING-787-1131",
+    "component": "Avionics",
+    "date": "2024-04-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 180
+  },
+  {
+    "aircraftId": "BOEING-787-9879",
+    "component": "Avionics",
+    "date": "2024-11-01",
+    "failure": false,
+    "hoursSinceLastMaintenance": 240
+  },
+  {
+    "aircraftId": "BOEING-777-6643",
+    "component": "Avionics",
+    "date": "2024-03-10",
+    "failure": false,
+    "hoursSinceLastMaintenance": 207
+  },
+  {
+    "aircraftId": "AIRBUS-A350-1851",
+    "component": "Engine",
+    "date": "2024-01-02",
+    "failure": false,
+    "hoursSinceLastMaintenance": 212
+  },
+  {
+    "aircraftId": "BOEING-737-9207",
+    "component": "Landing Gear",
+    "date": "2024-05-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 146
+  },
+  {
+    "aircraftId": "AIRBUS-A350-5697",
+    "component": "Hydraulics",
+    "date": "2024-06-22",
+    "failure": false,
+    "hoursSinceLastMaintenance": 245
+  },
+  {
+    "aircraftId": "BOEING-737-7530",
+    "component": "Engine",
+    "date": "2025-03-13",
+    "failure": true,
+    "hoursSinceLastMaintenance": 195
+  },
+  {
+    "aircraftId": "BOEING-777-3031",
+    "component": "Landing Gear",
+    "date": "2024-07-23",
+    "failure": true,
+    "hoursSinceLastMaintenance": 212
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5319",
+    "component": "Hydraulics",
+    "date": "2025-03-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 292
+  },
+  {
+    "aircraftId": "BOEING-737-9911",
+    "component": "Landing Gear",
+    "date": "2024-07-23",
+    "failure": false,
+    "hoursSinceLastMaintenance": 84
+  },
+  {
+    "aircraftId": "BOEING-737-1112",
+    "component": "Engine",
+    "date": "2024-05-06",
+    "failure": true,
+    "hoursSinceLastMaintenance": 213
+  },
+  {
+    "aircraftId": "BOEING-787-3754",
+    "component": "Engine",
+    "date": "2025-05-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 171
+  },
+  {
+    "aircraftId": "AIRBUS-A320-2446",
+    "component": "Wing",
+    "date": "2025-05-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 113
+  },
+  {
+    "aircraftId": "BOEING-737-6466",
+    "component": "Wing",
+    "date": "2025-05-07",
+    "failure": false,
+    "hoursSinceLastMaintenance": 230
+  },
+  {
+    "aircraftId": "AIRBUS-A350-8417",
+    "component": "Wing",
+    "date": "2025-02-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 285
+  },
+  {
+    "aircraftId": "AIRBUS-A350-9083",
+    "component": "Landing Gear",
+    "date": "2024-05-07",
+    "failure": false,
+    "hoursSinceLastMaintenance": 72
+  },
+  {
+    "aircraftId": "BOEING-777-8623",
+    "component": "Wing",
+    "date": "2024-05-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 51
+  },
+  {
+    "aircraftId": "BOEING-787-1491",
+    "component": "Wing",
+    "date": "2024-06-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 53
+  },
+  {
+    "aircraftId": "BOEING-737-8075",
+    "component": "Engine",
+    "date": "2024-08-20",
+    "failure": false,
+    "hoursSinceLastMaintenance": 77
+  },
+  {
+    "aircraftId": "BOEING-787-9720",
+    "component": "Wing",
+    "date": "2024-01-17",
+    "failure": false,
+    "hoursSinceLastMaintenance": 144
+  },
+  {
+    "aircraftId": "BOEING-737-5790",
+    "component": "Hydraulics",
+    "date": "2024-05-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 94
+  },
+  {
+    "aircraftId": "BOEING-737-3266",
+    "component": "Landing Gear",
+    "date": "2024-08-29",
+    "failure": false,
+    "hoursSinceLastMaintenance": 228
+  },
+  {
+    "aircraftId": "AIRBUS-A350-2008",
+    "component": "Wing",
+    "date": "2024-08-15",
+    "failure": false,
+    "hoursSinceLastMaintenance": 159
+  },
+  {
+    "aircraftId": "BOEING-787-1628",
+    "component": "Engine",
+    "date": "2024-05-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 177
+  },
+  {
+    "aircraftId": "AIRBUS-A350-1810",
+    "component": "Engine",
+    "date": "2024-01-06",
+    "failure": false,
+    "hoursSinceLastMaintenance": 279
+  },
+  {
+    "aircraftId": "BOEING-737-1393",
+    "component": "Hydraulics",
+    "date": "2025-05-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 67
+  },
+  {
+    "aircraftId": "BOEING-737-8142",
+    "component": "Wing",
+    "date": "2024-01-15",
+    "failure": true,
+    "hoursSinceLastMaintenance": 237
+  },
+  {
+    "aircraftId": "BOEING-777-1886",
+    "component": "Wing",
+    "date": "2024-04-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 161
+  },
+  {
+    "aircraftId": "AIRBUS-A350-8988",
+    "component": "Landing Gear",
+    "date": "2024-06-07",
+    "failure": false,
+    "hoursSinceLastMaintenance": 249
+  },
+  {
+    "aircraftId": "BOEING-737-1145",
+    "component": "Engine",
+    "date": "2025-01-21",
+    "failure": true,
+    "hoursSinceLastMaintenance": 287
+  },
+  {
+    "aircraftId": "AIRBUS-A350-5349",
+    "component": "Wing",
+    "date": "2025-03-24",
+    "failure": false,
+    "hoursSinceLastMaintenance": 236
+  },
+  {
+    "aircraftId": "BOEING-737-3180",
+    "component": "Wing",
+    "date": "2025-05-09",
+    "failure": true,
+    "hoursSinceLastMaintenance": 295
+  },
+  {
+    "aircraftId": "BOEING-787-1901",
+    "component": "Wing",
+    "date": "2025-05-26",
+    "failure": false,
+    "hoursSinceLastMaintenance": 275
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6031",
+    "component": "Engine",
+    "date": "2024-05-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 137
+  },
+  {
+    "aircraftId": "AIRBUS-A350-8400",
+    "component": "Engine",
+    "date": "2024-10-27",
+    "failure": false,
+    "hoursSinceLastMaintenance": 83
+  },
+  {
+    "aircraftId": "BOEING-787-6695",
+    "component": "Hydraulics",
+    "date": "2024-06-13",
+    "failure": false,
+    "hoursSinceLastMaintenance": 138
+  },
+  {
+    "aircraftId": "AIRBUS-A350-6219",
+    "component": "Landing Gear",
+    "date": "2025-02-23",
+    "failure": true,
+    "hoursSinceLastMaintenance": 266
+  },
+  {
+    "aircraftId": "BOEING-777-3492",
+    "component": "Engine",
+    "date": "2025-03-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 102
+  },
+  {
+    "aircraftId": "BOEING-777-9330",
+    "component": "Hydraulics",
+    "date": "2024-02-14",
+    "failure": true,
+    "hoursSinceLastMaintenance": 296
+  },
+  {
+    "aircraftId": "BOEING-787-2641",
+    "component": "Avionics",
+    "date": "2024-10-21",
+    "failure": false,
+    "hoursSinceLastMaintenance": 98
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5432",
+    "component": "Landing Gear",
+    "date": "2025-01-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 109
+  },
+  {
+    "aircraftId": "AIRBUS-A350-2668",
+    "component": "Landing Gear",
+    "date": "2024-12-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 292
+  },
+  {
+    "aircraftId": "AIRBUS-A350-1078",
+    "component": "Landing Gear",
+    "date": "2025-03-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 222
+  },
+  {
+    "aircraftId": "AIRBUS-A320-4907",
+    "component": "Avionics",
+    "date": "2024-08-20",
+    "failure": true,
+    "hoursSinceLastMaintenance": 184
+  },
+  {
+    "aircraftId": "AIRBUS-A350-4429",
+    "component": "Engine",
+    "date": "2024-06-12",
+    "failure": true,
+    "hoursSinceLastMaintenance": 265
+  },
+  {
+    "aircraftId": "BOEING-737-3222",
+    "component": "Engine",
+    "date": "2024-12-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 146
+  },
+  {
+    "aircraftId": "BOEING-737-6787",
+    "component": "Landing Gear",
+    "date": "2024-05-14",
+    "failure": false,
+    "hoursSinceLastMaintenance": 25
+  },
+  {
+    "aircraftId": "AIRBUS-A320-8577",
+    "component": "Avionics",
+    "date": "2024-09-05",
+    "failure": false,
+    "hoursSinceLastMaintenance": 194
+  },
+  {
+    "aircraftId": "BOEING-737-2548",
+    "component": "Hydraulics",
+    "date": "2025-02-11",
+    "failure": false,
+    "hoursSinceLastMaintenance": 241
+  },
+  {
+    "aircraftId": "AIRBUS-A350-7404",
+    "component": "Engine",
+    "date": "2024-07-22",
+    "failure": true,
+    "hoursSinceLastMaintenance": 233
+  },
+  {
+    "aircraftId": "AIRBUS-A320-1853",
+    "component": "Engine",
+    "date": "2024-09-30",
+    "failure": false,
+    "hoursSinceLastMaintenance": 197
+  },
+  {
+    "aircraftId": "BOEING-737-7733",
+    "component": "Engine",
+    "date": "2024-04-10",
+    "failure": true,
+    "hoursSinceLastMaintenance": 296
+  },
+  {
+    "aircraftId": "BOEING-787-3239",
+    "component": "Engine",
+    "date": "2024-01-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 260
+  },
+  {
+    "aircraftId": "BOEING-737-1915",
+    "component": "Avionics",
+    "date": "2024-03-12",
+    "failure": false,
+    "hoursSinceLastMaintenance": 156
+  },
+  {
+    "aircraftId": "AIRBUS-A320-6469",
+    "component": "Hydraulics",
+    "date": "2024-11-03",
+    "failure": false,
+    "hoursSinceLastMaintenance": 95
+  },
+  {
+    "aircraftId": "BOEING-737-9391",
+    "component": "Engine",
+    "date": "2024-01-09",
+    "failure": false,
+    "hoursSinceLastMaintenance": 208
+  },
+  {
+    "aircraftId": "AIRBUS-A350-7054",
+    "component": "Wing",
+    "date": "2024-09-08",
+    "failure": false,
+    "hoursSinceLastMaintenance": 29
+  },
+  {
+    "aircraftId": "AIRBUS-A320-5336",
+    "component": "Engine",
+    "date": "2025-02-18",
+    "failure": false,
+    "hoursSinceLastMaintenance": 62
+  },
+  {
+    "aircraftId": "BOEING-777-5062",
+    "component": "Landing Gear",
+    "date": "2024-09-17",
+    "failure": false,
+    "hoursSinceLastMaintenance": 191
+  },
+  {
+    "aircraftId": "BOEING-777-8068",
+    "component": "Landing Gear",
+    "date": "2024-10-25",
+    "failure": false,
+    "hoursSinceLastMaintenance": 151
+  }
+]

@@ -92,10 +92,13 @@
     .bg-navy { background: linear-gradient(to right, #1A2526, #2A3A3B); }
     .bg-navy-clear { background: linear-gradient(to right, #4B5A5B, #5A6A6B); }
     .bg-navy-logout { background: linear-gradient(to right, #B22222, #8B0000); }
+    .bg-admin { background: linear-gradient(to right, #8B0000, #A52A2A); }
+    .bg-technician { background: linear-gradient(to right, #006400, #228B22); }
+    .bg-viewer { background: linear-gradient(to right, #4B0082, #8A2BE2); }
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center">
-  <div class="container mx-auto p-4 sm:p-6 max-w-5xl">
+  <div class="container mx-auto p-4 sm:p-6 max-w-6xl">
     <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 card">
       <h1 class="text-2xl sm:text-3xl font-bold text-center text-primary mb-6 flex items-center justify-center">
         <i class="fas fa-plane mr-3 text-accent"></i>
@@ -112,11 +115,17 @@
             </h2>
             <input type="text" id="signup-username" placeholder="Choose a username" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
             <input type="password" id="signup-password" placeholder="Choose a password" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+            <input type="text" id="signup-fullname" placeholder="Full Name" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+            <input type="email" id="signup-email" placeholder="Email Address" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+            <select id="signup-role" class="w-full p-3 mb-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent text-secondary bg-gray-100">
+          <option value="admin">Admin</option>
+              <option value="technician">Technician</option>
+        </select>
             <button onclick="signup()" class="w-full bg-navy text-white p-3 rounded-lg btn-hover flex items-center justify-center">
               <i class="fas fa-user-plus mr-2"></i> Sign Up
             </button>
-          </div>
-          
+    </div>
+
           <!-- Login Form -->
           <div id="login-section">
             <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
@@ -133,8 +142,27 @@
       
       <!-- Main Section (Upload, Analysis, Predictions) -->
       <div id="main-section" class="fade-transition hidden">
-        <!-- Upload Section -->
-        <div id="upload-section" class="mb-8">
+        <!-- User Profile Header -->
+        <div id="user-profile" class="mb-6 p-4 bg-gray-100 rounded-lg">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white font-bold text-lg mr-4">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <h3 id="user-name" class="text-lg font-semibold text-primary"></h3>
+                <p id="user-role" class="text-sm text-secondary"></p>
+                <p id="user-aircraft" class="text-xs text-secondary"></p>
+              </div>
+            </div>
+            <button onclick="logout()" class="bg-navy-logout text-white px-4 py-2 rounded-lg btn-hover">
+              <i class="fas fa-sign-out-alt mr-2"></i> Logout
+            </button>
+          </div>
+        </div>
+
+        <!-- Upload Section (Technician and Admin only) -->
+        <div id="upload-section" class="mb-8 hidden">
           <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
             <i class="fas fa-upload mr-2 text-accent"></i> Upload Maintenance Logs
           </h2>
@@ -143,14 +171,30 @@
             <button onclick="uploadLogs()" class="bg-navy text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
               <i class="fas fa-upload mr-2"></i> Upload
             </button>
+          </div>
+        </div>
+
+        <!-- Admin Controls Section -->
+        <div id="admin-controls" class="mb-8 hidden">
+          <h2 class="text-lg sm:text-xl font-semibold text-primary mb-4 flex items-center">
+            <i class="fas fa-cogs mr-2 text-accent"></i> Admin Controls
+          </h2>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 flex-wrap">
             <button onclick="clearLogs()" class="bg-navy-clear text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
-              <i class="fas fa-trash-alt mr-2"></i> Clear Logs
+              <i class="fas fa-trash-alt mr-2"></i> Clear All Logs
             </button>
-            <button onclick="logout()" class="bg-navy-logout text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
-              <i class="fas fa-sign-out-alt mr-2"></i> Logout
+            <button onclick="exportLogs()" class="bg-navy text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
+              <i class="fas fa-download mr-2"></i> Export Logs
+            </button>
+            <button onclick="showUserManagement()" class="bg-navy text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
+              <i class="fas fa-users mr-2"></i> Manage Users
+            </button>
+            <button onclick="showSystemStats()" class="bg-navy text-white p-3 rounded-lg btn-hover min-w-[120px] flex items-center justify-center">
+              <i class="fas fa-chart-bar mr-2"></i> System Stats
             </button>
           </div>
         </div>
+
         <div class="section-divider"></div>
         
         <!-- Analysis Section -->
@@ -171,7 +215,24 @@
           </h2>
           <div id="prediction-content">
             <ul id="predictions" class="list-disc list-inside text-secondary"></ul>
-          </div>
+      </div>
+        </div>
+
+        <!-- User Management Modal (Admin only) -->
+        <div id="user-management-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+          <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg p-6 max-w-4xl w-full max-h-[80vh] overflow-y-auto">
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-semibold">User Management</h3>
+                <button onclick="closeUserManagement()" class="text-gray-500 hover:text-gray-700">
+                  <i class="fas fa-times text-xl"></i>
+                </button>
+              </div>
+              <div id="users-list" class="space-y-4">
+                <!-- Users will be populated here -->
+              </div>
+            </div>
+      </div>
         </div>
       </div>
     </div>
@@ -180,20 +241,28 @@
   <script>
     let token = null;
     let chartInstance = null;
+    let currentUser = null;
 
     async function signup() {
       const username = document.getElementById('signup-username').value;
       const password = document.getElementById('signup-password').value;
+      const fullName = document.getElementById('signup-fullname').value;
+      const email = document.getElementById('signup-email').value;
+      const role = document.getElementById('signup-role').value;
+      
       try {
         const response = await fetch('http://localhost:5001/api/signup', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username, password }),
+          body: JSON.stringify({ username, password, fullName, email, role }),
         });
         const data = await response.json();
         if (data.token) {
           token = data.token;
+          currentUser = data.user;
           toggleSections(true);
+          updateUserProfile();
+          setupRoleBasedUI();
           fetchAnalysis();
           fetchPredictions();
         } else {
@@ -216,7 +285,10 @@
         const data = await response.json();
         if (data.token) {
           token = data.token;
+          currentUser = data.user;
           toggleSections(true);
+          updateUserProfile();
+          setupRoleBasedUI();
           fetchAnalysis();
           fetchPredictions();
         } else {
@@ -227,8 +299,46 @@
       }
     }
 
+    function updateUserProfile() {
+      if (currentUser) {
+        document.getElementById('user-name').textContent = currentUser.fullName || currentUser.username;
+        const roleText = `Role: ${currentUser.role.charAt(0).toUpperCase() + currentUser.role.slice(1)}`;
+        document.getElementById('user-role').textContent = roleText;
+
+        let aircraftText = 'All Aircraft Access'; // Default for admin
+        if (currentUser.role !== 'admin') {
+          if (currentUser.assignedAircraft && currentUser.assignedAircraft.length > 0) {
+            aircraftText = `Assigned Aircraft: ${currentUser.assignedAircraft.join(', ')}`;
+          } else {
+            aircraftText = 'No aircraft assigned. Please contact an admin.';
+          }
+        }
+        document.getElementById('user-aircraft').textContent = aircraftText;
+      }
+    }
+
+    function setupRoleBasedUI() {
+      const uploadSection = document.getElementById('upload-section');
+      const adminControls = document.getElementById('admin-controls');
+
+      // Show/hide upload section based on role
+      if (currentUser.role === 'admin' || currentUser.role === 'technician') {
+        uploadSection.classList.remove('hidden');
+      } else {
+        uploadSection.classList.add('hidden');
+      }
+
+      // Show/hide admin controls based on role
+      if (currentUser.role === 'admin') {
+        adminControls.classList.remove('hidden');
+      } else {
+        adminControls.classList.add('hidden');
+      }
+    }
+
     function logout() {
       token = null;
+      currentUser = null;
       toggleSections(false);
       // Clear the chart and predictions
       if (chartInstance) {
@@ -257,6 +367,11 @@
 
     async function uploadLogs() {
       const file = document.getElementById('logFile').files[0];
+      if (!file) {
+        alert('Please select a file to upload');
+        return;
+      }
+      
       const formData = new FormData();
       formData.append('logs', file);
       try {
@@ -266,26 +381,195 @@
           body: formData,
         });
         const data = await response.json();
-        alert(data.message);
-        fetchAnalysis();
-        fetchPredictions();
+        if (response.ok) {
+          alert(`${data.message} (${data.count} logs uploaded by ${data.uploadedBy})`);
+          fetchAnalysis();
+          fetchPredictions();
+        } else {
+          alert(data.message || 'Upload failed');
+        }
       } catch (err) {
         alert('Error uploading logs');
       }
     }
 
     async function clearLogs() {
+      if (!confirm('Are you sure you want to clear ALL logs? This action cannot be undone.')) {
+        return;
+      }
+      
       try {
         const response = await fetch('http://localhost:5001/api/logs/clear', {
           method: 'DELETE',
           headers: { 'Authorization': `Bearer ${token}` },
         });
         const data = await response.json();
-        alert(data.message);
-        fetchAnalysis();
-        fetchPredictions();
+        if (response.ok) {
+          alert(`${data.message} (Cleared by ${data.clearedBy})`);
+          fetchAnalysis();
+          fetchPredictions();
+        } else {
+          alert(data.message || 'Failed to clear logs');
+        }
       } catch (err) {
         alert('Error clearing logs');
+      }
+    }
+
+    async function exportLogs() {
+      try {
+        const response = await fetch('http://localhost:5001/api/logs/export?format=csv', {
+          headers: { 'Authorization': `Bearer ${token}` },
+        });
+        
+        if (response.ok) {
+          const blob = await response.blob();
+          const url = window.URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'maintenance_logs.csv';
+          document.body.appendChild(a);
+          a.click();
+          window.URL.revokeObjectURL(url);
+          document.body.removeChild(a);
+        } else {
+          alert('Failed to export logs');
+        }
+      } catch (err) {
+        alert('Error exporting logs');
+      }
+    }
+
+    async function showUserManagement() {
+      try {
+        const response = await fetch('http://localhost:5001/api/users', {
+          headers: { 'Authorization': `Bearer ${token}` },
+        });
+        const users = await response.json();
+        
+        const usersList = document.getElementById('users-list');
+        usersList.innerHTML = users.map(user => {
+          const isTechnician = user.role === 'technician';
+          const aircraftList = user.assignedAircraft ? user.assignedAircraft.join(', ') : '';
+
+          return `
+          <div class="border rounded-lg p-4 space-y-3">
+            <div class="flex flex-wrap justify-between items-center gap-4">
+              <div>
+                <h4 class="font-semibold">${user.fullName || user.username}</h4>
+                <p class="text-sm text-gray-600">${user.username} (${user.role})</p>
+                <p class="text-xs text-gray-500">${user.email || 'No email provided'}</p>
+              </div>
+              <div class="flex items-center space-x-2">
+                <select class="border rounded px-2 py-1 text-sm" onchange="updateUserRole('${user._id}', this.value)">
+                  <option value="admin" ${user.role === 'admin' ? 'selected' : ''}>Admin</option>
+                  <option value="technician" ${user.role === 'technician' ? 'selected' : ''}>Technician</option>
+                </select>
+                <button onclick="toggleUserStatus('${user._id}', ${!user.isActive})" class="px-3 py-1 rounded text-sm ${user.isActive ? 'bg-red-500 text-white' : 'bg-green-500 text-white'}">
+                  ${user.isActive ? 'Deactivate' : 'Activate'}
+                </button>
+              </div>
+            </div>
+            
+            <div class="${isTechnician ? '' : 'hidden'}">
+              <label class="text-sm font-medium text-gray-700">Assigned Aircraft (comma-separated):</label>
+              <div class="flex items-center space-x-2 mt-1">
+                <input type="text" id="aircraft-input-${user._id}" class="w-full border rounded px-2 py-1 text-sm" value="${aircraftList}">
+                <button onclick="updateAssignedAircraft('${user._id}')" class="bg-blue-500 text-white px-3 py-1 rounded text-sm whitespace-nowrap">Save Aircraft</button>
+              </div>
+            </div>
+          </div>
+        `}).join('');
+        
+        document.getElementById('user-management-modal').classList.remove('hidden');
+      } catch (err) {
+        alert('Error loading users');
+      }
+    }
+
+    function closeUserManagement() {
+      document.getElementById('user-management-modal').classList.add('hidden');
+    }
+
+    async function updateUserRole(userId, newRole) {
+      try {
+        const response = await fetch(`http://localhost:5001/api/users/${userId}`, {
+          method: 'PUT',
+          headers: { 
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ role: newRole }),
+        });
+        
+        if (response.ok) {
+          showUserManagement(); // Refresh the list
+        } else {
+          alert('Failed to update user role');
+        }
+      } catch (err) {
+        alert('Error updating user role');
+      }
+    }
+
+    async function toggleUserStatus(userId, isActive) {
+      try {
+        const response = await fetch(`http://localhost:5001/api/users/${userId}`, {
+          method: 'PUT',
+          headers: { 
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ isActive }),
+        });
+        
+        if (response.ok) {
+          showUserManagement(); // Refresh the list
+        } else {
+          alert('Failed to update user status');
+        }
+      } catch (err) {
+        alert('Error updating user status');
+      }
+    }
+
+    async function updateAssignedAircraft(userId) {
+      const input = document.getElementById(`aircraft-input-${userId}`);
+      // Convert comma-separated string to an array, and trim whitespace from each entry
+      const assignedAircraft = input.value.split(',').map(s => s.trim()).filter(Boolean); // filter(Boolean) removes empty strings from the array
+
+      try {
+        const response = await fetch(`http://localhost:5001/api/users/${userId}`, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ assignedAircraft }),
+        });
+
+        if (response.ok) {
+          alert('Aircraft assignments updated successfully!');
+          await showUserManagement(); // Refresh the user list to show changes
+        } else {
+          const data = await response.json();
+          alert(`Failed to update aircraft: ${data.message || 'Unknown error'}`);
+        }
+      } catch (err) {
+        alert('An error occurred while updating aircraft assignments.');
+      }
+    }
+
+    async function showSystemStats() {
+      try {
+        const response = await fetch('http://localhost:5001/api/stats', {
+          headers: { 'Authorization': `Bearer ${token}` },
+        });
+        const stats = await response.json();
+        
+        alert(`System Statistics:\n\nTotal Logs: ${stats.totalLogs}\nTotal Users: ${stats.totalUsers}\nFailure Rate: ${stats.failureRate}\nLast Updated: ${new Date(stats.lastUpdated).toLocaleString()}`);
+      } catch (err) {
+        alert('Error loading system statistics');
       }
     }
 
@@ -377,14 +661,28 @@
         const data = await response.json();
         const predictionsList = document.getElementById('predictions');
         predictionsList.innerHTML = '';
+        
         if (data.predictions.length === 0) {
           predictionsList.innerHTML = '<li class="text-gray-500">No maintenance required at this time.</li>';
         } else {
           data.predictions.forEach(p => {
             const li = document.createElement('li');
-            li.textContent = `Component ${p.component} on Aircraft ${p.aircraftId} needs maintenance`;
+            li.className = 'mb-2 p-2 bg-gray-50 rounded';
+            li.innerHTML = `
+              <strong>${p.component}</strong> on Aircraft <strong>${p.aircraftId}</strong>
+              <br><span class="text-sm text-gray-600">Hours since last maintenance: ${p.hoursSinceLastMaintenance}</span>
+              <br><span class="text-sm ${p.riskLevel === 'HIGH' ? 'text-red-600' : 'text-orange-600'}">Risk Level: ${p.riskLevel}</span>
+            `;
             predictionsList.appendChild(li);
           });
+        }
+        
+        // Add analysis info
+        if (data.averageHours) {
+          const infoDiv = document.createElement('div');
+          infoDiv.className = 'mt-4 p-3 bg-blue-50 rounded text-sm text-gray-700';
+          infoDiv.innerHTML = `Analysis based on average of ${data.averageHours} hours since last maintenance. Analyzed by: ${data.analyzedBy}`;
+          predictionsList.appendChild(infoDiv);
         }
       } catch (err) {
         console.error('Error fetching predictions:', err);

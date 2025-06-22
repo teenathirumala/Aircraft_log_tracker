@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # Backend Server Service
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: aircraft_log_server
+    restart: unless-stopped
+    env_file: ./server/.env # Pass environment variables from the .env file
+    ports:
+      - "5001:5001"
+    networks:
+      - app-network
+
+  # Frontend Client Service (using Nginx)
+  client:
+    image: nginx:alpine
+    container_name: aircraft_log_client
+    restart: unless-stopped
+    ports:
+      - "5500:80"
+    volumes:
+      - ./client:/usr/share/nginx/html # Mount the client code
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf # Mount the nginx config
+    depends_on:
+      - server
+    networks:
+      - app-network
+
+# Define the network
+networks:
+  app-network:
+    driver: bridge 

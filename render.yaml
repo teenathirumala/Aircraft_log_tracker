@@ -1,18 +1,61 @@
+# This is a blueprint for deploying the Aircraft Maintenance Log Analyzer on Render.
+# You can add this file to your repository and create a new "Blueprint" service on Render.
+# Render will automatically deploy all the services defined below.
+
 services:
-  - type: web
-    name: aircraft-log-tracker-backend
-    env: node
-    plan: free # You can change to 'starter' or other plans based on your needs
-    region: oregon # Choose a region, e.g., 'oregon', 'ohio', 'singapore', etc.
-    buildCommand: npm install
-    startCommand: node server.js
+  # -----------------
+  # Backend API Service
+  # -----------------
+  - type: web # This is a web service that can run backend code
+    name: aircraft-api-server
+    env: docker # Specify that we are using a Dockerfile
+    
+    # --- Build Configuration ---
+    repo: https://github.com/your-username/aircraft_log_tracker.git # IMPORTANT: Change this to your repository URL
+    dockerfilePath: ./server/Dockerfile # Path to the server's Dockerfile
+    
+    # --- Environment Variables ---
+    # These are crucial for your application to run.
+    # Set these in the Render dashboard under the service's "Environment" section.
     envVars:
-      - key: NODE_VERSION
-        value: 18 # Specify the Node.js version; adjust if needed
-      - key: PORT
-        value: 5001 # Render will override this with its assigned port
       - key: MONGO_URI
-        sync: false # This will prompt you to set the value in the Render dashboard for security
+        fromDatabase:
+          name: aircraft-db # Assumes a Render MongoDB instance named 'aircraft-db'
+          property: connectionString
       - key: JWT_SECRET
-        sync: false # This will prompt you to set the value in the Render dashboard
-    autoDeploy: false # Set to true if you want automatic deploys on git push
+        generateValue: true # Let Render securely generate a random string for you
+      - key: PORT
+        value: 5001
+
+  # -----------------
+  # Frontend Static Site
+  # -----------------
+  - type: staticsite # This service type is optimized for static files (HTML, CSS, JS)
+    name: aircraft-client
+    
+    # --- Build Configuration ---
+    # Render will automatically use a simple web server for static sites.
+    # No build command is needed if you are not using a framework like React/Vue.
+    repo: https://github.com/your-username/aircraft_log_tracker.git # IMPORTANT: Change this to your repository URL
+    buildFilter:
+      paths:
+      - client/**
+    
+    # --- Static Site Configuration ---
+    publishPath: ./client # The directory containing your static files
+    
+    # --- URL Rewrites (for Single Page Apps) ---
+    # This ensures that refreshing the page on any client-side route still loads index.html
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+# -----------------
+# Database (Optional, but recommended)
+# -----------------
+# You can also provision a MongoDB database directly through Render.
+databases:
+  - name: aircraft-db
+    databaseName: aircraft_logs # The actual name of the database inside MongoDB
+    ipAllowList: [] # Allows access from anywhere; for production, restrict this to your service IPs 
